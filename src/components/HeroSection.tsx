@@ -54,7 +54,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-8 md:px-16">
-          <div className="flex max-w-2xl flex-col gap-10">
+          <div className="flex max-w-2xl flex-col gap-6">
             {/* Portrait */}
             <div
               className={cn(
