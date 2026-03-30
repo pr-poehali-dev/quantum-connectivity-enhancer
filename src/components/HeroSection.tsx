@@ -110,7 +110,7 @@ export default function HeroSection() {
                 {/* CTA & social */}
                 <div className="flex items-center gap-6 pt-2">
                   <a
-                    href="#contact"
+                    href="tel:+79226135972"
                     className="px-6 py-3 bg-white text-black text-sm font-medium tracking-wider hover:bg-white/90 transition-colors"
                   >
                     Записаться на консультацию
