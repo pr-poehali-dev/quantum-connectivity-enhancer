@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-2.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-1.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-4.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
+  'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/3a373965-6915-42c4-8ff3-d97bbc0a1490.jpg',
+  'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/5b617050-10c5-4782-8ea0-986cca63c56f.jpg',
+  'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/5bfbb6c5-27e8-4a46-8edb-bc767beb098e.jpg',
+  'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/0b2970fd-a244-4a2d-b921-cce0c18ab528.jpg',
 ];
 
 const specializations = [
