@@ -52,8 +52,8 @@ export default function HeroSection() {
 
       <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/65 to-black/20" />
 
-      <div className="relative z-10 flex h-full items-center">
-        <div className="container mx-auto px-8 md:px-16">
+      <div className="relative z-10 flex h-full items-start overflow-y-auto">
+        <div className="container mx-auto px-8 md:px-16 py-16">
           <div className="flex max-w-2xl flex-col gap-6">
             {/* Portrait */}
             <div
@@ -62,7 +62,7 @@ export default function HeroSection() {
                 isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               )}
             >
-              <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-white/30 shadow-2xl md:h-64 md:w-64">
+              <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-white/30 shadow-2xl md:h-48 md:w-48">
                 <img
                   src="https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/bucket/eda5a216-d425-45fb-9f7c-dde498e770bd.jpeg"
                   alt="Ветчанин Вадим Леонидович"
