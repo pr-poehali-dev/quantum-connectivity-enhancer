@@ -14,7 +14,7 @@ const specializations = [
   'Авиационная психология',
   'Коучинг',
   'Профайлинг',
-  'Духовная навигация',
+  'Мастер йоги',
 ];
 
 export default function HeroSection() {
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 </div>
 
                 <p className="text-base font-light text-white/60 max-w-lg leading-relaxed">
-                  Эксперт в области духовной навигации, профайлинга и авиационной психологии.
+                  Эксперт в области йоги, профайлинга и авиационной психологии.
                   Помогаю людям и организациям находить устойчивость, ресурс и путь к росту.
                 </p>
 
