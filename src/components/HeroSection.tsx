@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 
 const images = [
   'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/3a373965-6915-42c4-8ff3-d97bbc0a1490.jpg',
-  'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/5b617050-10c5-4782-8ea0-986cca63c56f.jpg',
+  'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/81075e16-b02c-4040-b21f-89a8d3c39f87.jpg',
   'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/files/5bfbb6c5-27e8-4a46-8edb-bc767beb098e.jpg',
   'https://cdn.poehali.dev/projects/c744ac22-8891-4578-9e55-2b4aa8f44d5e/bucket/dc7fd0c6-6f77-4765-8349-679b5c53baaf.jpeg',
 ];
