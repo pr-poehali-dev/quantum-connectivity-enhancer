@@ -10,7 +10,7 @@ const images = [
 
 const specializations = [
   'Психология',
-  'Йога · 30 лет',
+  'Йога · 40 лет',
   'Авиационная психология',
   'Коучинг',
   'Профайлинг',
@@ -152,7 +152,7 @@ export default function HeroSection() {
               )}
             >
               {[
-                { value: '30+', label: 'лет в йоге' },
+                { value: '40+', label: 'лет в йоге' },
                 { value: '2009–2018', label: 'зав. кафедрой' },
                 { value: '100+', label: 'авторских программ' },
               ].map((stat) => (

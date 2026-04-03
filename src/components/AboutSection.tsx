@@ -10,7 +10,7 @@ const milestones = [
 
 const credentials = [
   'Практикующий психолог',
-  'Мастер йоги · 30+ лет',
+  'Мастер йоги · 40+ лет',
   'Сертифицированный коуч',
   'Профайлер',
   'Бизнес-тренер',
@@ -31,7 +31,7 @@ export default function AboutSection() {
             <h2 className="text-3xl md:text-5xl font-light text-black leading-tight mb-8">
               Путь длиной
               <br />
-              <span className="text-black/40">в 30 лет</span>
+              <span className="text-black/40">в 40 лет</span>
             </h2>
 
             <div className="space-y-5 text-[15px] font-light text-black/60 leading-relaxed">
