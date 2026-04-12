@@ -9,12 +9,12 @@ const images = [
 ];
 
 const specializations = [
-  'Психология',
-  'Йога · 40 лет',
-  'Авиационная психология',
-  'Коучинг',
-  'Профайлинг',
-  'Мастер йоги',
+  { title: 'Психологическое консультирование', desc: 'Индивидуальные консультации, работа с парами, мужско-женские отношения' },
+  { title: 'Авиационная психология', desc: 'Тренинги для экипажей, управление стрессом и авиационная безопасность' },
+  { title: 'Йога. Телесные практики.', desc: 'Йогатерапия, реабилитация, телесно-ориентированная терапия' },
+  { title: 'Бизнес-консультирование. Коучинг.', desc: 'Антикризисное управление, трансформация команд, коучинг руководителей' },
+  { title: 'Профайлинг. Диагностика профиля личности.', desc: 'Выявление ресурсов, диагностика устойчивости личности' },
+  { title: 'Мастер Йоги. Путь развития ДУШИ.', desc: 'Авторские программы Ха-Тха и Раджа Йоги, духовная навигация' },
 ];
 
 export default function HeroSection() {
@@ -95,15 +95,16 @@ export default function HeroSection() {
                   Помогаю людям и организациям находить устойчивость, ресурс и путь к росту.
                 </p>
 
-                {/* Specialization tags */}
-                <div className="flex flex-wrap gap-2">
+                {/* Specialization cards */}
+                <div className="grid grid-cols-2 gap-2 max-w-xl">
                   {specializations.map((spec) => (
-                    <span
-                      key={spec}
-                      className="px-3 py-1 text-xs font-light tracking-wider text-white/70 border border-white/20 rounded-full backdrop-blur-sm"
+                    <div
+                      key={spec.title}
+                      className="px-4 py-3 border border-white/15 backdrop-blur-sm hover:border-white/35 hover:bg-white/5 transition-all duration-300 rounded-sm"
                     >
-                      {spec}
-                    </span>
+                      <p className="text-xs font-medium tracking-wide text-white/90 leading-snug mb-1">{spec.title}</p>
+                      <p className="text-[11px] font-light text-white/40 leading-relaxed">{spec.desc}</p>
+                    </div>
                   ))}
                 </div>
 
