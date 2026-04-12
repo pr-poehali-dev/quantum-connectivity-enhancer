@@ -1,3 +1,10 @@
+const education = [
+  { year: '2005', org: 'ТГУ', text: 'Факультет психологии, г. Томск' },
+  { year: '2007', org: '', text: 'Институт Коучинга и Развития бизнеса, г. Москва' },
+  { year: '2018', org: 'ИННТО', text: 'Тренер-преподаватель по виду спорта (парапланерный спорт), г. Омск' },
+  { year: '2022', org: 'РГППУ', text: 'Квалификация «Практический психолог», г. Екатеринбург' },
+];
+
 const milestones = [
   { year: '1987', text: 'Начало пути в йоге — озд. группа ШЙГАС, г. Днепропетровск' },
   { year: '1996', text: 'Школа Русской Йоги (ШРЙ), г. Пермь' },
@@ -67,27 +74,58 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right — timeline */}
-          <div>
-            <p className="text-xs tracking-[0.4em] text-black/30 uppercase mb-8">Ключевые вехи</p>
-            <div className="relative">
-              <div className="absolute left-[52px] top-0 bottom-0 w-px bg-black/8" />
-              <div className="space-y-0">
-                {milestones.map((m, i) => (
-                  <div key={i} className="flex gap-6 group pb-8 last:pb-0">
-                    <div className="flex-shrink-0 w-[52px] text-right">
-                      <span className="text-xs font-light text-black/30 group-hover:text-black/60 transition-colors">
-                        {m.year}
-                      </span>
+          {/* Right — timelines */}
+          <div className="space-y-12">
+
+            {/* Йога */}
+            <div>
+              <p className="text-xs tracking-[0.4em] text-black/30 uppercase mb-8">Ключевые вехи освоения теории и практики йоги</p>
+              <div className="relative">
+                <div className="absolute left-[52px] top-0 bottom-0 w-px bg-black/8" />
+                <div className="space-y-0">
+                  {milestones.map((m, i) => (
+                    <div key={i} className="flex gap-6 group pb-8 last:pb-0">
+                      <div className="flex-shrink-0 w-[52px] text-right">
+                        <span className="text-xs font-light text-black/30 group-hover:text-black/60 transition-colors">
+                          {m.year}
+                        </span>
+                      </div>
+                      <div className="relative flex-1 pl-6">
+                        <div className="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-black/20 group-hover:bg-black/50 transition-colors" />
+                        <p className="text-sm font-light text-black/60 leading-relaxed">{m.text}</p>
+                      </div>
                     </div>
-                    <div className="relative flex-1 pl-6">
-                      <div className="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-black/20 group-hover:bg-black/50 transition-colors" />
-                      <p className="text-sm font-light text-black/60 leading-relaxed">{m.text}</p>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
+
+            {/* Профессиональная подготовка */}
+            <div>
+              <p className="text-xs tracking-[0.4em] text-black/30 uppercase mb-8">Профессиональная подготовка</p>
+              <div className="relative">
+                <div className="absolute left-[52px] top-0 bottom-0 w-px bg-black/8" />
+                <div className="space-y-0">
+                  {education.map((e, i) => (
+                    <div key={i} className="flex gap-6 group pb-8 last:pb-0">
+                      <div className="flex-shrink-0 w-[52px] text-right">
+                        <span className="text-xs font-light text-black/30 group-hover:text-black/60 transition-colors">
+                          {e.year}
+                        </span>
+                      </div>
+                      <div className="relative flex-1 pl-6">
+                        <div className="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-black/20 group-hover:bg-black/50 transition-colors" />
+                        <p className="text-sm font-light text-black/60 leading-relaxed">
+                          {e.org && <span className="font-medium text-black/50">{e.org} · </span>}
+                          {e.text}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
